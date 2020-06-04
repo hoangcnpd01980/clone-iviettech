@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      iViettech - Trung tâm đào tạo Lập trình viên chuyên nghiệp | chuyên đào
-      tạo các khóa lập trình Java, .Net, Android, iOS, PHP, Tester
-    </title>
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <header>
-      <div class="menu">
-        <div class="menu-logo">
-          <img src="/image/logo-iviettech.png" alt="Logo Iviettech" />
-        </div>
-        <div class="menu-list">
-          <ul class="menu-list__list-item">
-            <li class="active">
-              <span>Trang chủ</span>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="course">
-              <span>Các khóa học lập trình</span>
-              <ul class="submenu-course">
-                <li class="advenced">
-                  <span>Chuyên nghiệp</span>
-                  <ul class="submenu-course__advenced">
-                    <li>Lập Trình Android</li>
-                    <li>Lập Trình IOS - Swift</li>
-                    <li>Kiểm Kiểm Thử Chuyên Nghiệp</li>
-                    <li>Lập Trình PHP & Laravel</li>
-                    <li>Lập Trình Front-End New</li>
-                    <li>Lập Trình Java Từ A - Z</li>
-                    <li>Lập Trình .NET Từ A - Z</li>
-                    <li>Lập Trình Viên Chuyên Nghiệp</li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Cấp tốc</span>
-                </li>
-                <li>
-                  <span>Các khóa khác</span>
-                </li>
-              </ul>
-            </li>
-            <li class="course">
-              <span>Đăng ký học</span>
-            </li>
-            <li class="course">
-              <span>Việc làm</span>
-            </li>
-            <li class="course">
-              <span>iVietTeach</span>
-            </li>
-            <li class="course">
-              <span>
-                 <span>Trang vàng HV</span>
-            </li>
-            <li class="course">
-              <span> <span>Blog</span>
-            </li>
-          </ul>
-        </div>
-        <div class="menu-search">This is button Search</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    iViettech - Trung tâm đào tạo Lập trình viên chuyên nghiệp | chuyên đào
+    tạo các khóa lập trình Java, .Net, Android, iOS, PHP, Tester
+  </title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="menu-logo">
+        <img src="/image/logo-ivettech.png" alt="Logo Iviettech" />
       </div>
-    </header>
-    <script
-      src="https://kit.fontawesome.com/e8aa1f6a53.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="menu-list">
+        <ul class="menu-list__list-item">
+          <li class="active">
+            <span>Trang chủ</span>
+            <i class="fas fa-angle-down"></i>
+          </li>
+          <li class="course">
+            <span>Các khóa học lập trình</span>
+            <i class="fas fa-angle-down font-icon"></i>
+            <ul class="submenu-course">
+              <li class="advenced">
+                <span>Chuyên nghiệp</span>
+                <ul class="submenu-course__advenced">
+                  <li>Lập Trình Android</li>
+                  <li>Lập Trình IOS - Swift</li>
+                  <li>Kiểm Kiểm Thử Chuyên Nghiệp</li>
+                  <li>Lập Trình PHP & Laravel</li>
+                  <li>Lập Trình Front-End New</li>
+                  <li>Lập Trình Java Từ A - Z</li>
+                  <li>Lập Trình .NET Từ A - Z</li>
+                  <li>Lập Trình Viên Chuyên Nghiệp</li>
+                </ul>
+              </li>
+              <li class="submenu-speed">
+                <span>Cấp tốc</span>
+                <ul class="submenu-course__speed">
+                  <li>Lập Trình Java Cấp Tốc</li>
+                </ul>
+              </li>
+              <li class="another-course">
+                <span>Các khóa khác</span>
+                <ul class="submenu-course__another-course">
+                  <li>Lập Trình Cơ Bản</li>
+                  <li>Thiết Kế Đồ Họa</li>
+                  <li>Thiết Kế Web</li>
+                  <li>Kỹ Sư Cầu Nối</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="course">
+            <span>Đăng ký học</span>
+            <i class="fas fa-angle-down font-icon"></i>
+          </li>
+          <li class="course">
+            <span>Việc làm</span>
+            <i class="fas fa-angle-down font-icon"></i>
+          </li>
+          <li class="course">
+            <span>iVietTeach</span>
+            <i class="fas fa-angle-down font-icon"></i>
+          </li>
+          <li class="course">
+            <span>Trang vàng HV</span>
+            <i class="fas fa-angle-down font-icon"></i>
+          </li>
+          <li class="course">
+            <span>Blog</span>
+            <i class="fas fa-angle-down font-icon"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-search">
+        <i class="fas fa-search" id="button-search"></i>
+        <div class="menu-search__content" id="search">
+          <form class="form-search">
+            <input type="text" placeholder="Nhập thông tin tìm kiếm" />
+            <button>TÌM KIẾM</button>
+          </form>
+        </div>
+      </div>
+  </header>
+  <script src="https://kit.fontawesome.com/e8aa1f6a53.js" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
