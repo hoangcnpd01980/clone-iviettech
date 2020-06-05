@@ -7,6 +7,7 @@ body {
   line-height: 1.5em;
   font-size: 0.83em;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 /*This is Header Menu*/
@@ -16,6 +17,8 @@ body {
 
   border-bottom: 5px solid #ca3438;
   font-size: 15px;
+  text-shadow: 0.4px 0.4px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 550;
 }
 
 #button-search {
@@ -84,15 +87,14 @@ body {
 .submenu-course {
   padding: 35px 0px 0px;
   width: 100%;
-  opacity: 0;
+  display: none;
 
   list-style-type: none;
   position: absolute;
 }
 
 .course:hover .submenu-course {
-  opacity: 1;
-  transition: all 0.5s;
+  display: block;
 }
 
 .submenu-course li {
@@ -114,11 +116,11 @@ body {
   position: absolute;
 
   list-style-type: none;
-  opacity: 0;
+  display: none;
 }
 
 .advenced:hover .submenu-course__advenced {
-  opacity: 1;
+  display: block;
   transition: all 0.5s;
 }
 
@@ -147,12 +149,11 @@ body {
   top: 0px;
   left: 170px;
   width: 100%;
-  opacity: 0;
+  display: none;
 }
 
 .submenu-course > .submenu-speed:hover > .submenu-course__speed {
-  opacity: 1;
-  transition: all 0.5s;
+  display: block;
 }
 
 .another-course .submenu-course__another-course {
@@ -162,7 +163,7 @@ body {
   width: 100%;
   left: 170px;
   top: 95px;
-  opacity: 0;
+  display: none;
 }
 
 .submenu-course .course-another {
@@ -170,13 +171,11 @@ body {
 }
 
 .submenu-course .another-course:hover .submenu-course__another-course {
-  opacity: 1;
-  transition: all 0.5s;
+  display: block;
 }
 
 .submenu-course__another-course > li:hover {
   color: #ca3438;
-  transition: all 0.5s;
 }
 
 .submenu-course__speed > li:hover {
