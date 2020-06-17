@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/responsive/responsive-header.css">
 </head>
 
-<body>
+<body onload="toggleMenu()" onresize="toggleMenu()">
   <header>
     <div class="menu">
       <div class="menu-logo">
@@ -20,7 +20,7 @@
       </div>
       <div class="menu-list">
         <ul class="menu-list__list-item">
-          <li class="active">
+          <li class="course active">
             <span>Trang chủ</span>
             <i class="fas fa-angle-down"></i>
           </li>
@@ -80,6 +80,9 @@
           </li>
         </ul>
       </div>
+      <div class="button-collaps" id="form-collap">
+        <button id="btn-collap">----</button>
+      </div>
       <div class="menu-search">
         <i class="fas fa-search" id="button-search"></i>
         <div class="menu-search__content" id="search">
@@ -89,6 +92,7 @@
           </form>
         </div>
       </div>
+      <div id="test"></div>
   </header>
   <script src="https://kit.fontawesome.com/e8aa1f6a53.js" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
